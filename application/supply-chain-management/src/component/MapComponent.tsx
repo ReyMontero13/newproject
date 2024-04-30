@@ -37,7 +37,7 @@ const MapComponent: React.FC = () => {
 
     useEffect(() => {
         // Fetch the GeoJSON from the local public folder
-        fetch('/geojson/cebu-street.geojson')
+        fetch('/data/geojson/cebu/cebu-street.geojson')
             .then(res => res.json())
             .then(data => setGeoJson(data))
             .catch(err => console.error('Error fetching GeoJSON:', err));
